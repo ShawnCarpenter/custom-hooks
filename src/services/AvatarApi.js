@@ -1,10 +1,5 @@
 export const getCharacters = async(page = 1) => {
-  const res = await fetch(`https://cors-anywhere.herokuapp.com/https://last-airbender-api.herokuapp.com/api/v1/characters/?perPage=20&page=${page}`,
-    { 
-      headers: { 
-        Origin:null 
-      } 
-    });
+  const res = await fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters/?perPage=20&page=${page}`);
   
   if(!res.ok)  throw 'Uh-oh, something done broked!';
 
@@ -18,7 +13,7 @@ export const getCharacters = async(page = 1) => {
 };
 
 export const getCharacterById = async(id) => {
-  const res = await fetch(`https://cors-anywhere.herokuapp.com/https://last-airbender-api.herokuapp.com/api/v1/characters/${id}`, 
+  const res = await fetch(`https://last-airbender-api.herokuapp.com/api/v1/characters/${id}`, 
     { 
       headers: { 
         Origin:null 

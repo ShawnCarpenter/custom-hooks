@@ -22,6 +22,7 @@ describe('CharacterList component', () => {
 
     return waitFor(() => {
       expect(characterList).not.toBeEmptyDOMElement();
+      expect(characterList).toHaveTextContent('Dude');
 
     });
   });

@@ -25,7 +25,7 @@ export const useCharacterById = _id => {
       .then(character => setCharacter(character))
       .finally(() => setLoading(false));
   }, [_id]);
-  console.log(character);
+  
   return {
     loading,
     character

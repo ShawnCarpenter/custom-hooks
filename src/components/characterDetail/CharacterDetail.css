@@ -1,0 +1,6 @@
+.CharacterDetail {
+  margin: .5rem;
+  border: .2rem solid orange;
+  max-width: 40vw;
+  padding: .2rem;
+}

@@ -1,0 +1,13 @@
+.CharacterList {
+  display: grid;
+  grid-template:repeat(4, 1fr) / repeat(5, 1fr);
+  align-items: baseline;
+  img {
+    max-width: 100px;
+    border-radius:.3rem;
+  }
+
+  li {
+    list-style: none;
+  }
+}

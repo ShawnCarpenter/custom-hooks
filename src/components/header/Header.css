@@ -1,0 +1,7 @@
+.Header {
+  min-width:100vw;
+  min-height: 7vh;
+  background-color: #0000ff;
+  color: orange;
+  padding: 1rem;
+}
